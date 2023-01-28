@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <Ammunition.Defs.AmmoCategoryDef>
+    <defName>LTS_Chemfuel</defName>
+    <label>Chemfuel</label>
+    <ammoType>Explosive</ammoType>
+    <ammoDefs>
+      <li>Chemfuel</li>
+    </ammoDefs>
+    <includeWeaponDefs>
+      <li MayRequire="VanillaExpanded.VWE">VWE_Gun_Flamethrower</li>
+      <li MayRequire="VanillaExpanded.VWEHW">VWE_Gun_HeavyFlamer</li>
+    </includeWeaponDefs>
+    <excludeWeaponDefs />
+  </Ammunition.Defs.AmmoCategoryDef>
+
+</Defs>

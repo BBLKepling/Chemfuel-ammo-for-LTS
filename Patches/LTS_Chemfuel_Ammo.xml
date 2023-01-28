@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+  <mods>
+    <li>[LTS]Ammunition - Simple Ammo</li>
+  </mods>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/Ammunition.Defs.AmmoCategoryDef[defName="LTS_Industrial"]/excludeWeaponDefs</xpath>
+    <value>
+      <li MayRequire="VanillaExpanded.VWE">VWE_Gun_Flamethrower</li>
+      <li MayRequire="VanillaExpanded.VWEHW">VWE_Gun_HeavyFlamer</li>
+    </value>
+  </match>
+</Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+    <value>
+      <li Class="Ammunition.DefModExtensions.AmmunitionExtension" />
+    </value>
+  </Operation>
+
+</Patch>
